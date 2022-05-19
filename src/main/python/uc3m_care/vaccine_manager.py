@@ -28,16 +28,16 @@ class VaccineManager:
             my_patient.save_patient()
             return my_patient.patient_sys_id
 
-        def get_vaccine_date (self, input_file):
+        def get_vaccine_date (self, input_file, date):
             """Gets an appointment for a registered patient"""
-            my_sign= VaccinationAppointment.create_appointment_from_json_file(input_file)
+            my_sign= VaccinationAppointment.create_appointment_from_json_file(input_file, date)
             #save the date in store_date.json
             my_sign.save_appointment()
             return my_sign.date_signature
 
-        def vaccine_patient(self, date_signature):
+        def vaccine_patient(self, date_signature, date):
             """Register the vaccination of the patient"""
-            appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature)
+            appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature, date)
             return appointment.register_vaccination()
 
     instance = None
