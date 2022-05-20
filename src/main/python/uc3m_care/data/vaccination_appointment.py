@@ -24,7 +24,7 @@ class VaccinationAppointment():
             self.__patient_sys_id)
         self.__patient_id = patient.patient_id
         self.__phone_number = PhoneNumber(patient_phone_number).value
-        self.__appointment_date = AppointmentDate(date).value
+        self.__appointment_date = date
         self.__date_signature = self.vaccination_signature
 
 
@@ -92,7 +92,7 @@ class VaccinationAppointment():
 
 
     @classmethod
-    def get_appointment_from_date_signature( cls, date_signature,date ):
+    def get_appointment_from_date_signature( cls, date_signature ):
         """returns the vaccination appointment object for the date_signature received"""
         appointments_store = AppointmentsJsonStore()
         appointment_record = appointments_store.find_item(DateSignature(date_signature).value)
@@ -102,7 +102,8 @@ class VaccinationAppointment():
         #     datetime.fromtimestamp(appointment_record["_VaccinationAppointment__issued_at"]))
         # freezer.start()
         appointment = cls(appointment_record["_VaccinationAppointment__patient_sys_id"],
-                          appointment_record["_VaccinationAppointment__phone_number"],date)
+                          appointment_record["_VaccinationAppointment__phone_number"],
+                          appointment_record["_VaccinationAppointment__appointment_date"])#este date hay que sacarlo del json
         # freezer.stop()
         return appointment
 
@@ -113,7 +114,7 @@ class VaccinationAppointment():
         new_appointment = cls(
             appointment_parser.json_content[appointment_parser.PATIENT_SYSTEM_ID_KEY],
             appointment_parser.json_content[appointment_parser.CONTACT_PHONE_NUMBER_KEY],
-            date)
+            AppointmentDate(date).value)
         return new_appointment
 
     def is_valid_today( self ):

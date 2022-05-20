@@ -27,7 +27,7 @@ class TestVaccinePatient(TestCase):
         my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
                                           "minombre tienelalongitudmaxima", "Regular",
                                           "+34123456789", "6")
-        my_manager.get_vaccine_date(file_test, "2022-03-18")
+        my_manager.get_vaccine_date(file_test, "2022-08-15")
 
         my_manager.request_vaccination_id("57c811e5-3f5a-4a89-bbb8-11c0464d53e6",
                                           "minombre tieneuncharmenosqmax", "Family",
@@ -36,13 +36,13 @@ class TestVaccinePatient(TestCase):
 
         my_manager.get_vaccine_date(file_test, "2022-03-18")
 
-    @freeze_time("2022-03-18")
+    @freeze_time("2022-08-15")
     def test_vaccine_patient_ok(self):
         """basic path , signature is found , and date = today"""
         my_manager = VaccineManager()
 
         value = my_manager.vaccine_patient\
-                ("4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079", "2022-08-15")
+                ("4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
         self.assertTrue(value)
         vaccination_log = VaccinationJsonStore()
         vaccination_entry = vaccination_log.find_item\
@@ -63,7 +63,7 @@ class TestVaccinePatient(TestCase):
 
         with self.assertRaises(VaccineManagementException) as context_manager:
             my_manager.vaccine_patient(
-                "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079", "2022-08-15")
+                "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
         self.assertEqual(context_manager.exception.message, "Today is not the date")
         # read the file again to compare
         hash_new = file_store_vaccine.data_hash()
@@ -79,7 +79,7 @@ class TestVaccinePatient(TestCase):
         hash_original = file_store_vaccine.data_hash()
         with self.assertRaises(VaccineManagementException) as context_manager:
             my_manager.vaccine_patient(
-                "a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c", "2022-08-15")
+                "a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c")
         self.assertEqual(context_manager.exception.message, "date_signature format is not valid")
         hash_new = file_store_vaccine.data_hash()
 
@@ -95,7 +95,7 @@ class TestVaccinePatient(TestCase):
 
         with self.assertRaises(VaccineManagementException) as context_manager:
             my_manager.vaccine_patient(
-                "7a8403d8605804cf2534fd7885940f3c3d8ec60ba578bc158b5dc2b9fb68d524", "2022-08-15")
+                "7a8403d8605804cf2534fd7885940f3c3d8ec60ba578bc158b5dc2b9fb68d524")
         self.assertEqual(context_manager.exception.message, "date_signature is not found")
         # read the file again to compare
         hash_new = file_store_vaccine.data_hash()
@@ -111,7 +111,7 @@ class TestVaccinePatient(TestCase):
         my_manager = VaccineManager()
         with self.assertRaises(VaccineManagementException) as context_manager:
             my_manager.vaccine_patient(
-                "5a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c", "2022-08-15")
+                "5a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c")
         self.assertEqual(context_manager.exception.message, "Store_date not found")
 
     @freeze_time("2022-03-18")
@@ -123,5 +123,5 @@ class TestVaccinePatient(TestCase):
         my_manager = VaccineManager()
         with self.assertRaises(VaccineManagementException) as context_manager:
             my_manager.vaccine_patient(
-                "5a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c", "2022-08-15")
+                "5a06c7bede3d584e934e2f5bd3861e625cb31937f9f1a5362a51fbbf38486f1c")
         self.assertEqual(context_manager.exception.message, "date_signature is not found")

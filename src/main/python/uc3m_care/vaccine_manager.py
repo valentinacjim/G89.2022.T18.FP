@@ -35,9 +35,9 @@ class VaccineManager:
             my_sign.save_appointment()
             return my_sign.date_signature
 
-        def vaccine_patient(self, date_signature, date):
+        def vaccine_patient(self, date_signature):
             """Register the vaccination of the patient"""
-            appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature, date)
+            appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature)
             return appointment.register_vaccination()
 
     instance = None
