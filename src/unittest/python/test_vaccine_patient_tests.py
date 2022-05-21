@@ -2,7 +2,6 @@
 import unittest
 from unittest import TestCase
 from freezegun import freeze_time
-from datetime import datetime
 from uc3m_care import VaccineManager
 from uc3m_care import VaccineManagementException
 from uc3m_care import JSON_FILES_RF2_PATH

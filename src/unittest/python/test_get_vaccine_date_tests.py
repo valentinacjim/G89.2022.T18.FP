@@ -21,9 +21,12 @@ param_list_nok = [("test_dup_all.json","2022-08-15","JSON Decode Error - Wrong J
                     ("test_dup_data2.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
                     ("test_dup_data2_content.json","2022-08-15","phone number is not valid"),
                     ("test_dup_field1.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
-                    ("test_dup_field2.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
-                    ("test_dup_final_bracket.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
-                    ("test_dup_initial_bracket.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
+                    ("test_dup_field2.json","2022-08-15","JSON Decode Error - "
+                                                         "Wrong JSON Format"),
+                    ("test_dup_final_bracket.json","2022-08-15",
+                        "JSON Decode Error - Wrong JSON Format"),
+                    ("test_dup_initial_bracket.json","2022-08-15",
+                            "JSON Decode Error - Wrong JSON Format"),
                     ("test_dup_label1.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
                     ("test_dup_label1_content.json","2022-08-15","Bad label patient_id"),
                     ("test_dup_label2.json","2022-08-15", "JSON Decode Error - Wrong JSON Format"),
@@ -39,7 +42,21 @@ param_list_nok = [("test_dup_all.json","2022-08-15","JSON Decode Error - Wrong J
                     ("test_no_char_plus.json","2022-08-15", "phone number is not valid"),
                     ("test_no_colon.json","2022-08-15", "JSON Decode Error - Wrong JSON Format"),
                     ("test_no_comillas.json","2022-08-15","JSON Decode Error - Wrong JSON Format"),
-                    ("test_no_phone.json","2022-08-15", "phone number is not valid")
+                    ("test_no_phone.json","2022-08-15", "phone number is not valid"),
+                    ("test_ok.json","2022-03-08", "appointment date is not valid"),
+                    ("test_ok.json","2021-05-12", "appointment date is not valid"),
+                    ("test_ok.json","2022-13-15", "appointment date is not valid"),
+                    ("test_ok.json","2022-00-15", "appointment date is not valid"),
+                    ("test_ok.json","2022-08-50", "appointment date is not valid"),
+                    ("test_ok.json","2022-08-00", "appointment date is not valid"),
+                    ("test_ok.json","20022-08-15", "appointment date is not valid"),
+                    ("test_ok.json","222-08-15", "appointment date is not valid"),
+                    ("test_ok.json"," -08-15", "appointment date is not valid"),
+                    ("test_ok.json","2022-100-15", "appointment date is not valid"),
+                    ("test_ok.json","2022- -15", "appointment date is not valid"),
+                    ("test_ok.json","2022-08-100", "appointment date is not valid"),
+                    ("test_ok.json","2022-08- ", "appointment date is not valid"),
+                    ("test_ok.json","2022/08/15", "appointment date is not valid"),
                     ]
 
 class TestGetVaccineDate(TestCase):
