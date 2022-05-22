@@ -50,11 +50,11 @@ param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format")
                   ("deletion28.json", "date_signature format is not valid"),
                   ("duplication31.json", "Bad label cancelation type"),
                   ("deletion31.json", "Bad label cancelation type"),
-                  ("duplication35.json", "cancelation type format not valid"),
-                  ("deletion35.json", "cancelation type format not valid"),
+                  ("duplication35.json", "cancelation type is not valid"),
+                  ("deletion35.json", "cancelation type is not valid"),
                   ("duplication38.json", "Bad label reason"),
                   ("deletion38.json", "Bad label reason"),
-                  ("duplication42.json", "the reason is not valid"),
+                  # ("duplication42.json", "the reason is not valid") duplication of the reason is not higher than 100
                   ("deletion42.json", "the reason is not valid"),
                   ("modification5.json", "JSON Decode Error - Wrong JSON Format"),
                   ("modification11.json", "JSON Decode Error - Wrong JSON Format"),
@@ -64,7 +64,7 @@ param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format")
                   ("modification45.json", "Bad label date signature"),
                   ("modification48.json", "date_signature format is not valid"),
                   ("modification51.json", "Bad label cancelation type"),
-                  ("modification54.json", "cancelation type format not valid"),
+                  ("modification54.json", "cancelation type is not valid"),
                   ("modification57.json", "Bad label reason"),
                   ("modification60.json", "the reason is not valid"),
                   ]
