@@ -74,7 +74,8 @@ class TestGetVaccineDate(TestCase):
     @freeze_time("2022-03-08")
     def test_cancel_vacine_ok(self):
         """test ok"""
-        file_test = JSON_FILES_RF2_PATH + "test_ok.json"
+        file_test = JSON_FILES_RF3_PATH + "valid.json"
+        preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
 
     #first , prepare my test , remove store patient
@@ -89,7 +90,7 @@ class TestGetVaccineDate(TestCase):
                                           "minombre tienelalongitudmaxima",
                                           "Regular","+34123456789","6")
     #check the method
-        my_manager.get_vaccine_date(file_test, "2022-08-15")
+        my_manager.get_vaccine_date(preparation_file, "2022-08-15")
         value = my_manager.cancel_appointment(file_test)
         self.assertEqual(value, "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
     #check store_date

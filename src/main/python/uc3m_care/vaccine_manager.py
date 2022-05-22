@@ -3,6 +3,7 @@
 from uc3m_care.data.vaccine_patient_register import VaccinePatientRegister
 from uc3m_care.data.vaccination_appointment import VaccinationAppointment
 from uc3m_care.storage.appointments_json_store import AppointmentsJsonStore
+from uc3m_care.data.vaccination_appointment_cancel import VaccinationAppointmentCancellation
 
 class VaccineManager:
     """Class for providing the methods for managing the vaccination process"""
@@ -43,9 +44,11 @@ class VaccineManager:
 
         def cancel_appointment(self,input_file):
 
-            # print(appointment)
+            myCancel = VaccinationAppointmentCancellation.create_appointment_from_json_file(input_file);
+            #save the cancellation into store_cancel.json
+            myCancel.save_cancel()
+            return myCancel.date_signature
 
-            ...
     instance = None
 
     def __new__ ( cls ):
