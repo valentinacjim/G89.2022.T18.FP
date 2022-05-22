@@ -113,13 +113,13 @@ class TestGetVaccineDate(TestCase):
         hash_original = file_store_date.data_hash()
         my_manager.get_vaccine_date(file_test, "2022-08-15")
 
-        for file_name in param_list_nok:
+        for file_name, expected_result in param_list_nok:
             with self.subTest(test=file_name):
                 file_test_cancelation = JSON_FILES_RF3_PATH + file_name
                 # check the method
                 with self.assertRaises(VaccineManagementException) as c_m:
                     my_manager.cancel_appointment(file_test_cancelation)
-                self.assertEqual(c_m.exception.message, "JSON Decode Error - Wrong JSON Format")
+                self.assertEqual(c_m.exception.message, expected_result)
 
                 # read the file again to compare
                 hash_new = file_store_date.data_hash()
