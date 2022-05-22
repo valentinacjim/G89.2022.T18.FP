@@ -7,11 +7,11 @@ from uc3m_care.exception.vaccine_management_exception import VaccineManagementEx
 
 class CancelAppointmentJsonStore():
     """Implements the singleton pattern"""
-    #pylint: disable=invalid-name
+    # pylint: disable=invalid-name
     class __CancelAppointmentJsonStore(JsonStore):
         """Subclass of JsonStore for managing the Appointments"""
         _FILE_PATH = JSON_FILES_PATH + "store_cancel.json"
-        _ID_FIELD = "CancelAppointment__date_signature"
+        _ID_FIELD = "_CancelAppointment__date_signature"
         ERROR_INVALID_APPOINTMENT_OBJECT = "Invalid appointment object"
 
         def add_item(self, item):
@@ -26,7 +26,7 @@ class CancelAppointmentJsonStore():
 
     def __new__ ( cls ):
         if not CancelAppointmentJsonStore.instance:
-            CancelAppointmentJsonStore.instance = CancelAppointmentJsonStore.__CancelAppoimentJsonStore()
+            CancelAppointmentJsonStore.instance = CancelAppointmentJsonStore.__CancelAppointmentJsonStore()
         return CancelAppointmentJsonStore.instance
 
     def __getattr__ ( self, nombre ):
