@@ -5,4 +5,4 @@ from uc3m_care.data.attribute.attribute import Attribute
 class CancelationType(Attribute):
     """Class for the attribute CancelationType"""
     _validation_pattern = r"(Temporal|Final)"
-    _validation_error_message = "cancelation cancellation_type is not valid"
+    _validation_error_message = "cancelation type is not valid"
