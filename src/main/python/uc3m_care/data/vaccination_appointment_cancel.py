@@ -43,6 +43,10 @@ class VaccinationAppointmentCancellation():
     def reason( self, value ):
         self.__reason = value
 
+    def save_cancel(self):
+        cancel_store = CancelAppointmentJsonStore()
+        cancel_store.add_item(self)
+
     @classmethod
     def get_appointment_from_date_signature(cls, date_signature):
         """returns the vaccination appointment object for the date_signature received"""

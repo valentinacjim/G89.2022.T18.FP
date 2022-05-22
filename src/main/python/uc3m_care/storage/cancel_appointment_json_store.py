@@ -11,7 +11,7 @@ class CancelAppointmentJsonStore():
     class __CancelAppointmentJsonStore(JsonStore):
         """Subclass of JsonStore for managing the Appointments"""
         _FILE_PATH = JSON_FILES_PATH + "store_cancel.json"
-        _ID_FIELD = "_CancelAppointment__date_signature"
+        _ID_FIELD = "_VaccinationAppointmentCancellation__date_signature"
         ERROR_INVALID_APPOINTMENT_OBJECT = "Invalid appointment object"
 
         def add_item(self, item):
