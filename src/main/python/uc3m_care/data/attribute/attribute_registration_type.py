@@ -5,4 +5,4 @@ from uc3m_care.data.attribute.attribute import Attribute
 class RegistrationType(Attribute):
     """Classs for the attribute PhoneNumber"""
     _validation_pattern = r"(Regular|Family)"
-    _validation_error_message = "Registration type is nor valid"
+    _validation_error_message = "Registration cancellation_type is nor valid"

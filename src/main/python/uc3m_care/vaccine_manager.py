@@ -2,6 +2,7 @@
 
 from uc3m_care.data.vaccine_patient_register import VaccinePatientRegister
 from uc3m_care.data.vaccination_appointment import VaccinationAppointment
+from uc3m_care.storage.appointments_json_store import AppointmentsJsonStore
 
 class VaccineManager:
     """Class for providing the methods for managing the vaccination process"""
@@ -39,7 +40,11 @@ class VaccineManager:
             """Register the vaccination of the patient"""
             appointment = VaccinationAppointment.get_appointment_from_date_signature(date_signature)
             return appointment.register_vaccination()
+
         def cancel_appointment(self,input_file):
+
+            # print(appointment)
+
             ...
     instance = None
 

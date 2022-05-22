@@ -53,8 +53,8 @@ param_list_nok=[("bb5dbd6f-d8b4-113f-8eb9-dd262cfc54e0",
                 "test_8 , patiend id 36 long"),
                 ("6071d52e-ab42-452d-837c-0639367db79f",
                  "minombre tienelalongitudmaxima",
-                 "Regularcito", "+34123456789", "6", "Registration type is nor valid",
-                 "test_9 registration type not valid"),
+                 "Regularcito", "+34123456789", "6", "Registration cancellation_type is nor valid",
+                 "test_9 registration cancellation_type not valid"),
                ("6071d52e-ab42-452d-837c-0639367db79f",
                 "minombre tieneun01", "Family",
                 "+34333456789","7","name surname is not valid",
@@ -199,7 +199,7 @@ class TestRequestVacID(unittest.TestCase):
         self.assertEqual("Id received is not a UUID", context_manager.exception.message)
 
     def test_request_registration_type_nok(self):
-        """registration type is not ok"""
+        """registration cancellation_type is not ok"""
         file_store = PatientsJsonStore()
         hash_original = file_store.data_hash()
 
@@ -210,7 +210,7 @@ class TestRequestVacID(unittest.TestCase):
                                                       "+34123456789", "22")
         hash_new = file_store.data_hash()
 
-        self.assertEqual("Registration type is nor valid", context_manager.exception.message)
+        self.assertEqual("Registration cancellation_type is nor valid", context_manager.exception.message)
         self.assertEqual(hash_new,hash_original)
 
 if __name__ == '__main__':

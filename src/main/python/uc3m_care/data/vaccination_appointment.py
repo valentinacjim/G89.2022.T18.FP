@@ -1,7 +1,6 @@
 """Contains the class Vaccination Appointment"""
 from datetime import datetime
 import hashlib
-from freezegun import freeze_time
 from uc3m_care.data.attribute.attribute_phone_number import PhoneNumber
 from uc3m_care.data.attribute.attribute_patient_system_id import PatientSystemId
 from uc3m_care.data.attribute.attribute_date_signature import DateSignature
@@ -131,3 +130,4 @@ class VaccinationAppointment():
             vaccination_log_entry = VaccinationLog(self.date_signature)
             vaccination_log_entry.save_log_entry()
         return True
+

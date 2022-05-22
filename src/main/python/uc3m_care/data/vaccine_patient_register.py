@@ -68,7 +68,7 @@ class VaccinePatientRegister:
 
     @property
     def vaccine_type( self ):
-        """Property representing the type vaccine"""
+        """Property representing the cancellation_type vaccine"""
         return self.__registration_type
     @vaccine_type.setter
     def vaccine_type( self, value ):
