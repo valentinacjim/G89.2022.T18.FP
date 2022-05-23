@@ -176,7 +176,6 @@ class TestGetVaccineDate(TestCase):
 
         # read the file again to compare
         hash_new = file_store_cancel.data_hash()
-
         self.assertEqual(hash_new, hash_original)
 
     @freeze_time("2022-03-08")
