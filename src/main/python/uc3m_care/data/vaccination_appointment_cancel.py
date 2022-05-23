@@ -8,6 +8,7 @@ from uc3m_care.data.attribute.attribute_cancelation_type import CancelationType
 from uc3m_care.data.attribute.attribute_reason import Reason
 from uc3m_care.exception.vaccine_management_exception import VaccineManagementException
 
+
 class VaccinationAppointmentCancellation():
     def __init__(self, date_signature, cancellation_type, reason):
         self.__alg = "SHA-256"
@@ -17,30 +18,30 @@ class VaccinationAppointmentCancellation():
         self.__reason = Reason(reason).value
 
     @property
-    def date_signature( self ):
+    def date_signature(self):
         """Property that represents the date signature"""
         return self.__date_signature
 
     @date_signature.setter
-    def date_signature( self, value ):
+    def date_signature(self, value):
         self.__date_signature = value
 
     @property
-    def cancellation_type( self ):
+    def cancellation_type(self):
         """Property that represents the cancellation cancellation_type"""
         return self.__cancellation_type
 
     @cancellation_type.setter
-    def cancellation_type( self, value ):
+    def cancellation_type(self, value):
         self.__cancellation_type = value
 
     @property
-    def reason( self ):
+    def reason(self):
         """Property that represents the reason to cancel"""
         return self.__reason
 
     @reason.setter
-    def reason( self, value ):
+    def reason(self, value):
         self.__reason = value
 
     def save_cancel(self):
@@ -64,12 +65,12 @@ class VaccinationAppointmentCancellation():
         return appointment
 
     @classmethod
-    def create_appointment_from_json_file( cls, json_file):
+    def create_appointment_from_json_file(cls, json_file):
         """returns the vaccination appointment for the received input json file"""
         appointment_parser = AppointmentCancellationJsonParser(json_file)
         new_appointment = cls(
             appointment_parser.json_content[appointment_parser.DATE_SIGNATURE_KEY],
             appointment_parser.json_content[appointment_parser.CANCELLATION_TYPE_KEY],
             appointment_parser.json_content[appointment_parser.REASON_KEY],
-            )
+        )
         return new_appointment

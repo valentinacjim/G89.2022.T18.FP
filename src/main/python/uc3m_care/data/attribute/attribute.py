@@ -23,7 +23,10 @@ class Attribute():
     def _validate( self, attr_value ):
         """validates the attr_value """
         registration_type_pattern = re.compile(self._validation_pattern)
-        res = registration_type_pattern.fullmatch(attr_value)
-        if not res:
+        try:
+            res = registration_type_pattern.fullmatch(attr_value)
+            if not res:
+                raise VaccineManagementException(self._validation_error_message)
+        except TypeError:
             raise VaccineManagementException(self._validation_error_message)
         return attr_value

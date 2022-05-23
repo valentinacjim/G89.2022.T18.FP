@@ -5,10 +5,17 @@ import shutil
 from freezegun import freeze_time
 from uc3m_care import VaccineManager
 from uc3m_care import VaccineManagementException
-from uc3m_care.cfg.vaccine_manager_config import JSON_FILES_RF2_PATH, JSON_FILES_RF3_PATH
+from uc3m_care.cfg.vaccine_manager_config import JSON_FILES_RF2_PATH, JSON_FILES_RF4_PATH
 from uc3m_care import PatientsJsonStore
 from uc3m_care import CancelAppointmentJsonStore
 
+param_list_ok = [("valid.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                ("test_bvv4.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                ("test_bvv5.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                ("test_bvv6.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                ("test_bvv7.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                ("test_ecv3.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
+                 ]
 
 param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format"),
                   ("deletion1.json", "JSON Decode Error - Wrong JSON Format"),
@@ -54,7 +61,8 @@ param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format")
                   ("deletion35.json", "cancelation type is not valid"),
                   ("duplication38.json", "Bad label reason"),
                   ("deletion38.json", "Bad label reason"),
-                  # ("duplication42.json", "the reason is not valid") duplication of the reason is not higher than 100
+                  # ("duplication42.json", "the reason is not valid")
+                  # duplication of the reason does not mean higher than 100
                   ("deletion42.json", "the reason is not valid"),
                   ("modification5.json", "JSON Decode Error - Wrong JSON Format"),
                   ("modification11.json", "JSON Decode Error - Wrong JSON Format"),
@@ -67,6 +75,14 @@ param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format")
                   ("modification54.json", "cancelation type is not valid"),
                   ("modification57.json", "Bad label reason"),
                   ("modification60.json", "the reason is not valid"),
+                  ("test_bvnv1.json", "date_signature format is not valid"),
+                  ("test_bvnv2.json", "date_signature format is not valid"),
+                  ("test_bvnv3.json", "date_signature format is not valid"),
+                  ("test_bvnv4.json", "the reason is not valid"),
+                  ("test_bvnv5.json", "the reason is not valid"),
+                  ("test_ecnv1.json", "cancelation type is not valid"),
+                  ("test_ecnv2.json", "cancelation type is not valid"),
+                  ("test_ecnv3.json", "the reason is not valid")
                   ]
 
 class TestGetVaccineDate(TestCase):
@@ -74,7 +90,6 @@ class TestGetVaccineDate(TestCase):
     @freeze_time("2022-03-08")
     def test_cancel_vacine_ok(self):
         """test ok"""
-        file_test = JSON_FILES_RF3_PATH + "valid.json"
         preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
 
@@ -91,8 +106,12 @@ class TestGetVaccineDate(TestCase):
                                           "Regular","+34123456789","6")
     #check the method
         my_manager.get_vaccine_date(preparation_file, "2022-08-15")
-        value = my_manager.cancel_appointment(file_test)
-        self.assertEqual(value, "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
+        for file_name, expected_result in param_list_ok:
+            with self.subTest(test=file_name):
+                file_test = JSON_FILES_RF4_PATH + file_name
+                value = my_manager.cancel_appointment(file_test)
+                self.assertEqual(value, expected_result)
+
     #check store_date
         self.assertIsNotNone(file_store_cancel.find_item(value))
 
@@ -116,7 +135,7 @@ class TestGetVaccineDate(TestCase):
 
         for file_name, expected_result in param_list_nok:
             with self.subTest(test=file_name):
-                file_test_cancelation = JSON_FILES_RF3_PATH + file_name
+                file_test_cancelation = JSON_FILES_RF4_PATH + file_name
                 # check the method
                 with self.assertRaises(VaccineManagementException) as c_m:
                     my_manager.cancel_appointment(file_test_cancelation)
