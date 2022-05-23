@@ -1,0 +1,9 @@
+[
+  {
+    "_VaccinationAppointmentCancellation__alg": "SHA-256",
+    "_VaccinationAppointmentCancellation__type": "DS",
+    "_VaccinationAppointmentCancellation__date_signature": "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079",
+    "_VaccinationAppointmentCancellation__cancellation_type": "Temporal",
+    "_VaccinationAppointmentCancellation__reason": "cancelation reason"
+  }
+]
