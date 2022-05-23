@@ -89,6 +89,13 @@ param_list_nok = [("duplication1.json", "JSON Decode Error - Wrong JSON Format")
 
 class TestGetVaccineDate(TestCase):
     """Class for testing get_vaccine_date"""
+    def setUp(self):
+        appointment_store = AppointmentsJsonStore()
+        cancel_store = CancelAppointmentJsonStore()
+        vaccine_store = VaccinationJsonStore()
+        appointment_store.delete_json_file()
+        cancel_store.delete_json_file()
+        vaccine_store.delete_json_file()
 
     @freeze_time("2022-03-08")
     def test_cancel_vacine_ok(self):
@@ -182,6 +189,8 @@ class TestGetVaccineDate(TestCase):
     def test_appointment_already_passed(self):
         preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
+        file_store_cancel = CancelAppointmentJsonStore()
+        file_store_cancel.delete_json_file()
 
         # first , prepare my test , remove store patient
         file_store = PatientsJsonStore()
@@ -194,11 +203,37 @@ class TestGetVaccineDate(TestCase):
         my_manager.get_vaccine_date(preparation_file, "2022-08-15")
         file_test = JSON_FILES_RF4_PATH + "valid.json"
         hash_original = file_store.data_hash()
+        freeze_time("2022-09-15").start()
+        with self.assertRaises(VaccineManagementException) as c_m:
+            my_manager.cancel_appointment(file_test)
+        self.assertEqual(c_m.exception.message, "The appointment date received has already passed.")
+        freeze_time("2022-09-15").stop()
+        hash_new = file_store.data_hash()
+        self.assertEqual(hash_new, hash_original)
+    @freeze_time("2022-03-08")
+    def test_vaccine_already_administered(self):
+        preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+        file_store_cancel = CancelAppointmentJsonStore()
+        file_store_cancel.delete_json_file()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima", "Regular",
+                                          "+34123456789", "6")
+        # check the method
+        my_manager.get_vaccine_date(preparation_file, "2022-08-15")
+        freeze_time("2022-08-15").start()
+        my_manager.vaccine_patient("4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
+        freeze_time("2022-08-15").stop()
+        file_test = JSON_FILES_RF4_PATH + "valid.json"
+        # hash_original = file_store.data_hash()
         with self.assertRaises(VaccineManagementException) as c_m:
             my_manager.cancel_appointment(file_test)
         self.assertEqual(c_m.exception.message, "Vaccine has already been administered.")
-        hash_new = file_store.data_hash()
-        self.assertEqual(hash_new, hash_original)
 
 
     @freeze_time("2022-03-08")
@@ -206,7 +241,8 @@ class TestGetVaccineDate(TestCase):
         """test """
         preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
-
+        file_store_cancel = CancelAppointmentJsonStore()
+        file_store_cancel.delete_json_file()
         # first , prepare my test , remove store patient
         file_store = PatientsJsonStore()
         file_store.delete_json_file()
