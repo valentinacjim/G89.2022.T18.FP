@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_cancel_appointment_tests.TestGetVaccineDate-20220523112520" tests="2" file="test_cancel_appointment_tests.py" time="0.530" timestamp="2022-05-23T11:25:21" failures="0" errors="0" skipped="0">
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok" time="0.100" timestamp="2022-05-23T11:25:20"/>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter" time="0.430" timestamp="2022-05-23T11:25:21"/>
+</testsuite>

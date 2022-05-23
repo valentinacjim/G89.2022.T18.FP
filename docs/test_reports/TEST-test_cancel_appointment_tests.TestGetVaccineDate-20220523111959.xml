@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_cancel_appointment_tests.TestGetVaccineDate-20220523111959" tests="71" file="test_cancel_appointment_tests.py" time="0.842" timestamp="2022-05-23T11:20:01" failures="71" errors="0" skipped="0">
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='valid.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='test_bvv4.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='test_bvv5.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='test_bvv6.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='test_bvv7.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok (test='test_ecv3.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 113, in test_cancel_vacine_ok
+    self.assertEqual(value, expected_result)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: None != '4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079'
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_cancel_vacine_ok" time="0.100" timestamp="2022-05-23T11:20:00">
+		<failure cancellation_type="AssertionError" message="unexpectedly None"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 116, in test_cancel_vacine_ok
+    self.assertIsNotNone(file_store_cancel.find_item(value))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 1328, in assertIsNotNone
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: unexpectedly None
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication1.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion1.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication2.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion2.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication3.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion3.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication4.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion4.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication6.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion6.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication7.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion7.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication8.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion8.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication10.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion10.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication12.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion12.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication13.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion13.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication14.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion14.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication16.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion16.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication18.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion18.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication20.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion20.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication22.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion22.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication23.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion23.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication24.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion24.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication25.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion25.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication28.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion28.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication31.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion31.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication35.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion35.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='duplication38.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion38.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='deletion42.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification5.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification11.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification15.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification26.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification44.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification45.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification48.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification51.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification54.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification57.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='modification60.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_bvnv1.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_bvnv2.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_bvnv3.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_bvnv4.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_bvnv5.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_ecnv1.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_ecnv2.json')" time="0.000" timestamp="0001-01-01T00:00:00">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+	<testcase classname="test_cancel_appointment_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter (test='test_ecnv3.json')" time="0.742" timestamp="2022-05-23T11:20:01">
+		<failure cancellation_type="AssertionError" message="VaccineManagementException not raised"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 582, in subTest
+    yield
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_cancel_appointment_tests.py", line 141, in test_get_vaccine_date_no_ok_parameter
+    my_manager.cancel_appointment(file_test_cancelation)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 227, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 164, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: VaccineManagementException not raised
+]]></failure>
+	</testcase>
+</testsuite>

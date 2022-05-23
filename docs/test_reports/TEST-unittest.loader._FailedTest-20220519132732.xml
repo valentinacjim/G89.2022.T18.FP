@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="unittest.loader._FailedTest-20220519132732" tests="4" file="unittest/loader.py" time="0.009" timestamp="2022-05-19T13:27:32" failures="0" errors="4" skipped="0">
+	<testcase classname="unittest.loader._FailedTest" name="test_get_vaccine_date_tests" time="0.003" timestamp="2022-05-19T13:27:32">
+		<error type="ImportError" message="Failed to import test module: test_get_vaccine_date_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py&quot;, line 5, in &lt;module&gt;
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: test_get_vaccine_date_tests
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 5, in <module>
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_request_vaccine_tests" time="0.002" timestamp="2022-05-19T13:27:32">
+		<error type="ImportError" message="Failed to import test module: test_request_vaccine_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_request_vaccine_tests.py&quot;, line 3, in &lt;module&gt;
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: test_request_vaccine_tests
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_request_vaccine_tests.py", line 3, in <module>
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_singleton_pattern_tests" time="0.002" timestamp="2022-05-19T13:27:32">
+		<error type="ImportError" message="Failed to import test module: test_singleton_pattern_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_singleton_pattern_tests.py&quot;, line 4, in &lt;module&gt;
+    from uc3m_care import VaccineManager
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\__init__.py&quot;, line 3, in &lt;module&gt;
+    from uc3m_care.data.vaccine_patient_register import VaccinePatientRegister
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\data\vaccine_patient_register.py&quot;, line 6, in &lt;module&gt;
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: test_singleton_pattern_tests
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_singleton_pattern_tests.py", line 4, in <module>
+    from uc3m_care import VaccineManager
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\__init__.py", line 3, in <module>
+    from uc3m_care.data.vaccine_patient_register import VaccinePatientRegister
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\data\vaccine_patient_register.py", line 6, in <module>
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+
+]]></error>
+	</testcase>
+	<testcase classname="unittest.loader._FailedTest" name="test_vaccine_patient_tests" time="0.002" timestamp="2022-05-19T13:27:32">
+		<error type="ImportError" message="Failed to import test module: test_vaccine_patient_tests
+Traceback (most recent call last):
+  File &quot;C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py&quot;, line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File &quot;c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_vaccine_patient_tests.py&quot;, line 4, in &lt;module&gt;
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 34, in testFailure
+    raise self._exception
+ImportError: Failed to import test module: test_vaccine_patient_tests
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\loader.py", line 154, in loadTestsFromName
+    module = __import__(module_name)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_vaccine_patient_tests.py", line 4, in <module>
+    from freezegun import freeze_time
+ModuleNotFoundError: No module named 'freezegun'
+
+]]></error>
+	</testcase>
+</testsuite>

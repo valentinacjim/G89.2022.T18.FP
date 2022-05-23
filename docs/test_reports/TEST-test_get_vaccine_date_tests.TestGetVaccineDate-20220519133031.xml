@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test_get_vaccine_date_tests.TestGetVaccineDate-20220519133031" tests="5" file="test_get_vaccine_date_tests.py" time="0.054" timestamp="2022-05-19T13:30:31" failures="2" errors="3" skipped="0">
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok" time="0.018" timestamp="2022-05-19T13:30:31">
+		<failure type="AssertionError" message="'File is not found' != 'patient system id is not valid'
+- File is not found
++ patient system id is not valid
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 111, in test_get_vaccine_date_no_ok
+    self.assertEqual(c_m.exception.message, "patient system id is not valid")
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: 'File is not found' != 'patient system id is not valid'
+- File is not found
++ patient system id is not valid
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_no_quotes" time="0.004" timestamp="2022-05-19T13:30:31">
+		<failure type="AssertionError" message="'File is not found' != 'JSON Decode Error - Wrong JSON Format'
+- File is not found
++ JSON Decode Error - Wrong JSON Format
+"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 131, in test_get_vaccine_date_no_ok_no_quotes
+    self.assertEqual(c_m.exception.message, "JSON Decode Error - Wrong JSON Format")
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: 'File is not found' != 'JSON Decode Error - Wrong JSON Format'
+- File is not found
++ JSON Decode Error - Wrong JSON Format
+
+]]></failure>
+	</testcase>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_data_manipulated" time="0.006" timestamp="2022-05-19T13:30:31">
+		<error type="FileNotFoundError" message="[Errno 2] No such file or directory: 'C:\\Users\\34628/PycharmProjects/2022_EG4_BASECODE_2/src/JsonFiles//RF2/store_patient_manipulated.json'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 150, in test_get_vaccine_date_no_ok_data_manipulated
+    shutil.copy(JSON_FILES_RF2_PATH + "store_patient_manipulated.json",
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\shutil.py", line 409, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\shutil.py", line 259, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\34628/PycharmProjects/2022_EG4_BASECODE_2/src/JsonFiles//RF2/store_patient_manipulated.json'
+]]></error>
+	</testcase>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_no_ok_parameter" time="0.014" timestamp="2022-05-19T13:30:31">
+		<error type="VaccineManagementException" message="Wrong file or file path"><![CDATA[Traceback (most recent call last):
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 31, in save
+    with open(self._FILE_PATH, "w", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\34628/PycharmProjects/2022_EG4_BASECODE_2/src/JsonFiles/store_patient.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 79, in test_get_vaccine_date_no_ok_parameter
+    my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\vaccine_manager.py", line 28, in request_vaccination_id
+    my_patient.save_patient()
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\data\vaccine_patient_register.py", line 121, in save_patient
+    patients_store.add_item(self)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\patients_json_store.py", line 34, in add_item
+    super().add_item(item)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 40, in add_item
+    self.save()
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 34, in save
+    raise VaccineManagementException("Wrong file or file path") from ex
+uc3m_care.exception.vaccine_management_exception.VaccineManagementException: Wrong file or file path
+]]></error>
+	</testcase>
+	<testcase classname="test_get_vaccine_date_tests.TestGetVaccineDate" name="test_get_vaccine_date_ok" time="0.011" timestamp="2022-05-19T13:30:31">
+		<error type="VaccineManagementException" message="Wrong file or file path"><![CDATA[Traceback (most recent call last):
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 31, in save
+    with open(self._FILE_PATH, "w", encoding="utf-8", newline="") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\34628/PycharmProjects/2022_EG4_BASECODE_2/src/JsonFiles/store_patient.json'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\34628\AppData\Local\Programs\Python\Python38-32\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\34628\PycharmProjects\G89.2022.T18.FP\venv\lib\site-packages\freezegun\api.py", line 789, in wrapper
+    result = func(*args, **kwargs)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\unittest\python\test_get_vaccine_date_tests.py", line 60, in test_get_vaccine_date_ok
+    my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\vaccine_manager.py", line 28, in request_vaccination_id
+    my_patient.save_patient()
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\data\vaccine_patient_register.py", line 121, in save_patient
+    patients_store.add_item(self)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\patients_json_store.py", line 34, in add_item
+    super().add_item(item)
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 40, in add_item
+    self.save()
+  File "c:\users\34628\pycharmprojects\g89.2022.t18.fp\src\main\python\uc3m_care\storage\json_store.py", line 34, in save
+    raise VaccineManagementException("Wrong file or file path") from ex
+uc3m_care.exception.vaccine_management_exception.VaccineManagementException: Wrong file or file path
+]]></error>
+	</testcase>
+</testsuite>
