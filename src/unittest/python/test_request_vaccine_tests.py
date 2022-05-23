@@ -210,7 +210,8 @@ class TestRequestVacID(unittest.TestCase):
                                                       "+34123456789", "22")
         hash_new = file_store.data_hash()
 
-        self.assertEqual("Registration cancellation_type is nor valid", context_manager.exception.message)
+        self.assertEqual("Registration cancellation_type is nor valid",
+                         context_manager.exception.message)
         self.assertEqual(hash_new,hash_original)
 
 if __name__ == '__main__':

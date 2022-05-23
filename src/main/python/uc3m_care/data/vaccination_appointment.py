@@ -97,13 +97,9 @@ class VaccinationAppointment():
         appointment_record = appointments_store.find_item(DateSignature(date_signature).value)
         if appointment_record is None:
             raise VaccineManagementException("date_signature is not found")
-        # freezer = freeze_time(
-        #     datetime.fromtimestamp(appointment_record["_VaccinationAppointment__issued_at"]))
-        # freezer.start()
         appointment = cls(appointment_record["_VaccinationAppointment__patient_sys_id"],
                           appointment_record["_VaccinationAppointment__phone_number"],
-                          appointment_record["_VaccinationAppointment__appointment_date"])#este date hay que sacarlo del json
-        # freezer.stop()
+                          appointment_record["_VaccinationAppointment__appointment_date"])
         return appointment
 
     @classmethod
@@ -130,4 +126,3 @@ class VaccinationAppointment():
             vaccination_log_entry = VaccinationLog(self.date_signature)
             vaccination_log_entry.save_log_entry()
         return True
-

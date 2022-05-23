@@ -216,8 +216,10 @@ class TestGetVaccineDate(TestCase):
         freeze_time("2022-09-15").stop()
         hash_new = file_store.data_hash()
         self.assertEqual(hash_new, hash_original)
+
     @freeze_time("2022-03-08")
     def test_vaccine_already_administered(self):
+        """test when the vaccine has been already administered"""
         preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
         my_manager = VaccineManager()
         file_store_cancel = CancelAppointmentJsonStore()
@@ -233,14 +235,14 @@ class TestGetVaccineDate(TestCase):
         # check the method
         my_manager.get_vaccine_date(preparation_file, "2022-08-15")
         freeze_time("2022-08-15").start()
-        my_manager.vaccine_patient("4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
+        my_manager.vaccine_patient(
+            "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079")
         freeze_time("2022-08-15").stop()
         file_test = JSON_FILES_RF4_PATH + "valid.json"
         # hash_original = file_store.data_hash()
         with self.assertRaises(VaccineManagementException) as c_m:
             my_manager.cancel_appointment(file_test)
         self.assertEqual(c_m.exception.message, "Vaccine has already been administered.")
-
 
     @freeze_time("2022-03-08")
     def test_vaccine_already_canceled(self):

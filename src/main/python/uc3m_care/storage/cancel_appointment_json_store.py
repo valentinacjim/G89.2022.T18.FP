@@ -17,7 +17,8 @@ class CancelAppointmentJsonStore():
         def add_item(self, item):
             """Overrides the add_item method to verify the item to be stored"""
             # pylint: disable=import-outside-toplevel, cyclic-import
-            from uc3m_care.data.vaccination_appointment_cancel import VaccinationAppointmentCancellation
+            from uc3m_care.data.vaccination_appointment_cancel \
+                import VaccinationAppointmentCancellation
             if not isinstance(item, VaccinationAppointmentCancellation):
                 raise VaccineManagementException(self.ERROR_INVALID_APPOINTMENT_OBJECT)
             super().add_item(item)
@@ -26,7 +27,8 @@ class CancelAppointmentJsonStore():
 
     def __new__ ( cls ):
         if not CancelAppointmentJsonStore.instance:
-            CancelAppointmentJsonStore.instance = CancelAppointmentJsonStore.__CancelAppointmentJsonStore()
+            CancelAppointmentJsonStore.instance = \
+                CancelAppointmentJsonStore.__CancelAppointmentJsonStore()
         return CancelAppointmentJsonStore.instance
 
     def __getattr__ ( self, nombre ):

@@ -1,6 +1,5 @@
 """Contains the class Vaccination Appointment Cancellation"""
 from datetime import datetime
-import hashlib
 from uc3m_care.storage.cancel_appointment_json_store import CancelAppointmentJsonStore
 from uc3m_care.parser.appointment_cancellation_json_parser import AppointmentCancellationJsonParser
 from uc3m_care.data.attribute.attribute_date_signature import DateSignature
@@ -10,9 +9,8 @@ from uc3m_care.exception.vaccine_management_exception import VaccineManagementEx
 from uc3m_care.storage.appointments_json_store import AppointmentsJsonStore
 from uc3m_care.storage.vaccination_json_store import VaccinationJsonStore
 class VaccinationAppointmentCancellation():
+    """Contains the class Vaccination Appointment Cancellation"""
     def __init__(self, date_signature, cancellation_type, reason):
-        self.__alg = "SHA-256"
-        self.__type = "DS"
         self.__date_signature = DateSignature(date_signature).value
         self.__cancellation_type = CancelationType(cancellation_type).value
         self.__reason = Reason(reason).value
@@ -45,6 +43,7 @@ class VaccinationAppointmentCancellation():
         self.__reason = value
 
     def save_cancel(self):
+        """Function save cancel appointment"""
         cancel_store = CancelAppointmentJsonStore()
         cancel_store.add_item(self)
 
@@ -75,10 +74,13 @@ class VaccinationAppointmentCancellation():
             appointment_parser.json_content[appointment_parser.REASON_KEY],
         )
         appointment_store = AppointmentsJsonStore()
-        appointment_data = appointment_store.find_item(DateSignature(new_appointment.date_signature).value)
+        appointment_data = \
+            appointment_store.find_item(DateSignature(new_appointment.date_signature).value)
         if appointment_data is None:
             raise VaccineManagementException("The appointment received does not exist.")
-        if datetime.fromisoformat(appointment_data["_VaccinationAppointment__appointment_date"]).date() < datetime.today().date():
+        if datetime.fromisoformat(
+                appointment_data["_VaccinationAppointment__appointment_date"]).date() < \
+                datetime.today().date():
             raise VaccineManagementException("The appointment date received has already passed.")
         vaccine_store = VaccinationJsonStore()
         if vaccine_store.find_item(DateSignature(new_appointment.date_signature).value) is not None:
