@@ -7,8 +7,8 @@ from uc3m_care.data.attribute.attribute_date_signature import DateSignature
 from uc3m_care.data.attribute.attribute_cancelation_type import CancelationType
 from uc3m_care.data.attribute.attribute_reason import Reason
 from uc3m_care.exception.vaccine_management_exception import VaccineManagementException
-
-
+from uc3m_care.storage.appointments_json_store import AppointmentsJsonStore
+from uc3m_care.storage.vaccination_json_store import VaccinationJsonStore
 class VaccinationAppointmentCancellation():
     def __init__(self, date_signature, cancellation_type, reason):
         self.__alg = "SHA-256"
@@ -67,10 +67,23 @@ class VaccinationAppointmentCancellation():
     @classmethod
     def create_appointment_from_json_file(cls, json_file):
         """returns the vaccination appointment for the received input json file"""
+
         appointment_parser = AppointmentCancellationJsonParser(json_file)
         new_appointment = cls(
             appointment_parser.json_content[appointment_parser.DATE_SIGNATURE_KEY],
             appointment_parser.json_content[appointment_parser.CANCELLATION_TYPE_KEY],
             appointment_parser.json_content[appointment_parser.REASON_KEY],
         )
+        appointment_store = AppointmentsJsonStore()
+        appointment_data = appointment_store.find_item(DateSignature(new_appointment.date_signature).value)
+        if appointment_data is None:
+            raise VaccineManagementException("The appointment received does not exist.")
+        if datetime.fromisoformat(appointment_data["_VaccinationAppointment__appointment_date"]).date() < datetime.today().date():
+            raise VaccineManagementException("The appointment date received has already passed.")
+        vaccine_store = VaccinationJsonStore()
+        if vaccine_store.find_item(DateSignature(new_appointment.date_signature).value) is not None:
+            raise VaccineManagementException("Vaccine has already been administered.")
+        cancel_store = CancelAppointmentJsonStore()
+        if cancel_store.find_item(DateSignature(new_appointment.date_signature).value) is not None:
+            raise VaccineManagementException("Appointment has already been canceled.")
         return new_appointment

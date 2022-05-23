@@ -8,7 +8,8 @@ from uc3m_care import VaccineManagementException
 from uc3m_care.cfg.vaccine_manager_config import JSON_FILES_RF2_PATH, JSON_FILES_RF4_PATH
 from uc3m_care import PatientsJsonStore
 from uc3m_care import CancelAppointmentJsonStore
-
+from uc3m_care import VaccinationJsonStore
+from uc3m_care import AppointmentsJsonStore
 param_list_ok = [("valid.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
                  ("test_bvv4.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
                  ("test_bvv5.json", "4d72d2670ce85dc9b368d138ddca7daacd8bee027bc44c7c4dc5b3309286a079"),
@@ -99,15 +100,17 @@ class TestGetVaccineDate(TestCase):
         file_store = PatientsJsonStore()
         file_store.delete_json_file()
         file_store_cancel = CancelAppointmentJsonStore()
-        file_store_cancel.delete_json_file()
-
+        file_store_vaccine = VaccinationJsonStore()
         # add a patient in the store
         my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
                                           "minombre tienelalongitudmaxima",
                                           "Regular", "+34123456789", "6")
         # check the method
-        my_manager.get_vaccine_date(preparation_file, "2022-08-15")
+
         for file_name, expected_result in param_list_ok:
+            file_store_vaccine.delete_json_file()
+            file_store_cancel.delete_json_file()
+            my_manager.get_vaccine_date(preparation_file, "2022-08-15")
             with self.subTest(test=file_name):
                 file_test = JSON_FILES_RF4_PATH + file_name
                 value = my_manager.cancel_appointment(file_test)
@@ -123,15 +126,15 @@ class TestGetVaccineDate(TestCase):
         # first , prepare my test , remove store patient
         file_store = PatientsJsonStore()
         file_store.delete_json_file()
-        file_store_date = CancelAppointmentJsonStore()
-        file_store_date.delete_json_file()
+        file_store_cancel = CancelAppointmentJsonStore()
+        file_store_cancel.delete_json_file()
         # add a patient in the store
         my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
                                           "minombre tienelalongitudmaxima",
                                           "Regular", "+34123456789", "6")
 
         file_test = JSON_FILES_RF2_PATH + 'test_ok.json'
-        hash_original = file_store_date.data_hash()
+        hash_original = file_store_cancel.data_hash()
         my_manager.get_vaccine_date(file_test, "2022-08-15")
 
         for file_name, expected_result in param_list_nok:
@@ -143,7 +146,7 @@ class TestGetVaccineDate(TestCase):
                 self.assertEqual(c_m.exception.message, expected_result)
 
                 # read the file again to compare
-                hash_new = file_store_date.data_hash()
+                hash_new = file_store_cancel.data_hash()
 
                 self.assertEqual(hash_new, hash_original)
 
@@ -152,15 +155,18 @@ class TestGetVaccineDate(TestCase):
         # first , prepare my test , remove store patient
         file_store = PatientsJsonStore()
         file_store.delete_json_file()
-        file_store_date = CancelAppointmentJsonStore()
+        file_store_cancel = CancelAppointmentJsonStore()
+        file_store_cancel.delete_json_file()
+        file_store_date = AppointmentsJsonStore()
         file_store_date.delete_json_file()
+
         # add a patient in the store
         my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
                                           "minombre tienelalongitudmaxima",
                                           "Regular", "+34123456789", "6")
 
         # file_test = JSON_FILES_RF2_PATH + 'test_ok.json'
-        hash_original = file_store_date.data_hash()
+        hash_original = file_store_cancel.data_hash()
 
         file_test_cancelation = JSON_FILES_RF4_PATH + 'valid.json'
         # check the method
@@ -169,7 +175,7 @@ class TestGetVaccineDate(TestCase):
         self.assertEqual(c_m.exception.message, "The appointment received does not exist.")
 
         # read the file again to compare
-        hash_new = file_store_date.data_hash()
+        hash_new = file_store_cancel.data_hash()
 
         self.assertEqual(hash_new, hash_original)
 
@@ -180,13 +186,35 @@ class TestGetVaccineDate(TestCase):
         # first , prepare my test , remove store patient
         file_store = PatientsJsonStore()
         file_store.delete_json_file()
-        file_store_date = CancelAppointmentJsonStore()
-        file_store_date.delete_json_file()
+
         # add a patient in the store
         my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
                                           "minombre tienelalongitudmaxima",
                                           "Regular", "+34123456789", "6")
 
         file_test = JSON_FILES_RF2_PATH + 'test_ok.json'
-        hash_original = file_store_date.data_hash()
+        hash_original = file_store_date.data_hash(preparation_file, "2022-08-15")
         my_manager.get_vaccine_date(file_test, "2022-08-15")
+
+    def test_vaccine_already_canceled(self):
+        """test """
+        preparation_file = JSON_FILES_RF2_PATH + "test_ok.json"
+        my_manager = VaccineManager()
+
+        # first , prepare my test , remove store patient
+        file_store = PatientsJsonStore()
+        file_store.delete_json_file()
+        # add a patient in the store
+        my_manager.request_vaccination_id("78924cb0-075a-4099-a3ee-f3b562e805b9",
+                                          "minombre tienelalongitudmaxima", "Regular",
+                                          "+34123456789", "6")
+        # check the method
+        my_manager.get_vaccine_date(preparation_file, "2022-08-15")
+        file_test = JSON_FILES_RF4_PATH + "valid.json"
+        my_manager.cancel_appointment(file_test)
+        with self.assertRaises(VaccineManagementException) as c_m:
+            my_manager.cancel_appointment(file_test)
+        self.assertEqual(c_m.exception.message, "The appointment has already been canceled.")
+
+        # check store_date
+        self.assertIsNotNone(file_store_cancel.find_item())

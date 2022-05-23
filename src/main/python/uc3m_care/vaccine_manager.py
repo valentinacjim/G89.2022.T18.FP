@@ -43,8 +43,8 @@ class VaccineManager:
             return appointment.register_vaccination()
 
         def cancel_appointment(self,input_file):
-
-            myCancel = VaccinationAppointmentCancellation.create_appointment_from_json_file(input_file);
+            apointment_store = AppointmentsJsonStore()
+            myCancel = VaccinationAppointmentCancellation.create_appointment_from_json_file(input_file)
             #save the cancellation into store_cancel.json
             myCancel.save_cancel()
             return myCancel.date_signature
